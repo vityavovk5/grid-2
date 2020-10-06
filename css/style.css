@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 90px 0;
+    background-color: #e2e7ec;
+}
+.main {
+    width: 1120px;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "big big small-1"
+      "big big small-1"
+      "small-2 small-3 ."
+      "small-2 small-3 .";
+  }
+  
+  .big { grid-area: big; }
+  
+  .small-1 { grid-area: small-1; }
+  
+  .small-2 { grid-area: small-2; }
+  
+  .small-3 { grid-area: small-3; }
+  
