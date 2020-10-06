@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 section {
     padding: 90px 0;
@@ -14,19 +19,100 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 20px;
     grid-template-areas:
-      "big big small-1"
-      "big big small-1"
-      "small-2 small-3 ."
-      "small-2 small-3 .";
+    "big big small-1"
+    "big big small-1"
+    "small-2 small-3 small-4"
+    "small-2 small-3 small-4";
   }
   
-  .big { grid-area: big; }
+  .big { 
+      display: grid;
+      grid-area: big;
+      background: url(../img/car.jpg);
+      width: 740px;
+    height: 540px;
+ }
   
-  .small-1 { grid-area: small-1; }
+  .small-1 { 
+      display: grid;
+      grid-area: small-1;
+    background-color: white;
+    width: 360px;
+    height: 540px;
+}
   
-  .small-2 { grid-area: small-2; }
+  .small-2 { 
+    display: grid;
+      grid-area: small-2;
+      background-color: white;
+      width: 360px;
+      height: 540px;
+    }
   
-  .small-3 { grid-area: small-3; }
-  
+  .small-3 { 
+    display: grid;
+      grid-area: small-3; 
+      background-color: white;
+      width: 360px;
+      height: 540px;
+    }
+    .small-4 { 
+        display: grid;
+        grid-area: small-4; 
+        background-color: white;
+        width: 360px;
+        height: 540px;
+    }
+    .date {
+        text-transform: uppercase;
+        color: #818181;
+        font-size: 0.8em;
+    }
+    .main-text {
+        margin: 30px;
+        align-self: end;
+    }
+    .main-title {
+        text-transform: uppercase;
+    color: white;
+    font-size: 2.3em;
+    }
+    .text {
+        width: 304px;
+        padding: 28px 28px 0 28px;
+    }
+    .title {
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .bottom {
+        width: 40px;
+        height: 40px;
+        align-self: end;
+        padding: 0 0 28px 28px;
+    }
+
+    .log {
+        margin-top: 80px;
+        padding-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .gif {
+        width: 16px;
+        height: 16px;
+    }
+    .grid-container > div {
+        -moz-transition: all 1s ease-out;
+-o-transition: all 1s ease-out;
+-webkit-transition: all 1s ease-out;
+    }
+    .grid-container > div:hover {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
